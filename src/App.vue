@@ -1,16 +1,12 @@
 <script setup lang="ts">
 import { css } from "../styled-system/css";
+import Header from "./components/Header.vue";
+Header;
 </script>
 
 <template>
-  <div>
-    <h1
-      :class="
-        css({ fontSize: 12, textDecoration: 'underline', color: 'tomato' })
-      "
-    >
-      Hello
-    </h1>
+  <div :class="css({ minHeight: '100vh', bgColor: 'color1', pt: '21px' })">
+    <Header />
   </div>
 </template>
 
